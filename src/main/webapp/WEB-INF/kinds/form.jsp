@@ -9,19 +9,11 @@
     <title>Title</title>
     <jsp:include page="../util/header.jsp"/>
 
-    <%--<style>--%>
-        <%--input {--%>
-            <%--width: 196px;--%>
-        <%--}--%>
-        <%--select {--%>
-            <%--width: 200px;--%>
-        <%--}--%>
-    <%--</style>--%>
 </head>
 <body>
     <div class="container">
     <h3>form</h3>
-    <form:form modelAttribute="kind" action="./" method="post">
+    <form:form modelAttribute="kind" action="/app/kinds/" method="post">
         <table class="table">
             <colgroup>
                 <col width="100px"/>
@@ -45,7 +37,7 @@
             </tr>
         </table>
     </form:form>
-    <a href=".">list</a>
+    <a href="/app/kinds/">list</a>
         <jsp:include page="../util/footer.jsp"/>
     </div>
 </body>

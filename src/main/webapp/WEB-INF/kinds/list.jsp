@@ -13,7 +13,7 @@
 <body>
     <div class="container">
     <h3>Kind list</h3>
-    <a href="./0">new item</a>
+    <a href="/app/kinds/0">new item</a>
     <table class="table table-hover">
         <tr>
             <th>id</th>
@@ -24,11 +24,11 @@
             <tr>
                 <td>${kind.id}</td>
                 <td>
-                    <a href="./${kind.id}">
+                    <a href="/app/kinds/${kind.id}">
                             ${kind.value}
                     </a>
                 </td>
-                <td><a href="./${kind.id}/delete" style="color: red;">delete</a></td>
+                <td><a href="/app/kinds/${kind.id}/delete" style="color: red;">delete</a></td>
             </tr>
         </c:forEach>
     </table>
