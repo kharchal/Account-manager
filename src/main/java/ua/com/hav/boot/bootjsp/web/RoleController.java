@@ -27,15 +27,17 @@ public class RoleController {
     public String list(Model model) {
         List<Role> roles = roleRepo.findAll();
         model.addAttribute("roles", roles);
+        List<Integer> unused = roleRepo.getUnused();
+        model.addAttribute("unused", unused);
         return "roles/list";
     }
 
-    @RequestMapping(value = {"/save"}, method = RequestMethod.GET)
-    public String save(@Valid Role role, BindingResult errors) {
+    @RequestMapping(value = {"/"}, method = RequestMethod.POST)
+    public String save(@Valid Role r, BindingResult errors) {
         if (errors.hasErrors()) {
             return "roles/form";
         }
-        roleRepo.save(role);
+        roleRepo.save(r);
         return "redirect:/roles/";
     }
 
@@ -48,7 +50,7 @@ public class RoleController {
     @RequestMapping("/{id}")
     public String edit(@PathVariable Integer id, Model model) {
         Role role = (id == 0) ? new Role() : roleRepo.findOne(id);
-        model.addAttribute("role", role);
+        model.addAttribute("rolex", role);
         return "roles/form";
     }
 }

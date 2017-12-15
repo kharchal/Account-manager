@@ -13,7 +13,7 @@
 <body>
     <div class="container">
     <h3>form</h3>
-    <form:form modelAttribute="role" action="/app/roles/save" method="get">
+    <form:form modelAttribute="rolex" action="/app/roles/" method="post">
         <table class="table">
             <colgroup>
                 <col width="100px"/>
@@ -25,9 +25,9 @@
                 <td></td>
             </tr>
             <tr>
-                <td><label for="role">NAME:</label></td>
-                <td><form:input class="form-control" path="role" id="role"/></td>
-                <td><form:errors cssStyle="color: red;" path="role"/></td>
+                <td><label for="value">NAME:</label></td>
+                <td><form:input class="form-control" path="value" id="value"/></td>
+                <td><form:errors cssStyle="color: red;" path="value"/></td>
             </tr>
             <tr>
                 <td colspan="2" align="right">

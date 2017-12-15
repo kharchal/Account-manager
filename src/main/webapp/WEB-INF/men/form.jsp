@@ -40,7 +40,7 @@
                     <input type="hidden" name="roleid" value="0"/>
                     <c:forEach var="r" items="${roles}">
                         <input type="checkbox" name="roleid" value="${r.id}" id="chbx_${r.id}" ${man.roleList.contains(r) ? "checked='checked'" : ""}/>
-                        <label for="chbx_${r.id}"><c:out value="${r.role}"/></label>
+                        <label for="chbx_${r.id}"><c:out value="${r.value}"/></label>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </c:forEach>
                     <form:errors cssStyle="color: red;" path="roleList"/>

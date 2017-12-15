@@ -25,10 +25,17 @@
                 <td>${r.id}</td>
                 <td>
                     <a href="/app/roles/${r.id}">
-                            ${r.role}
+                            ${r.value}
                     </a>
                 </td>
-                <td><a href="/app/roles/${r.id}/delete" style="color: red;">delete</a></td>
+                <td>
+                    <c:if test="${unused.contains(r.id)}" var="c">
+                        <a href="/app/roles/${r.id}/delete" style="color: red;">delete</a>
+                    </c:if>
+                    <c:if test="${not c}">
+                        <span style="color:green;">in use</span>
+                    </c:if>
+                </td>
             </tr>
         </c:forEach>
     </table>

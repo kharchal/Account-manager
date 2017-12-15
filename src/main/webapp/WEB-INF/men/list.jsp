@@ -33,7 +33,7 @@
                         <c:if test="${status.index ne 0}">
                             ,&nbsp;
                         </c:if>
-                        <c:out value="${item.role}"/>
+                        <c:out value="${item.value}"/>
                     </c:forEach>
                 </td>
                 <td><a href="/app/men/${man.id}/delete" style="color: red;">delete</a></td>
