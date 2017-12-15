@@ -30,7 +30,7 @@ public class RoleController {
         return "roles/list";
     }
 
-    @RequestMapping(value = {"/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/save"}, method = RequestMethod.GET)
     public String save(@Valid Role role, BindingResult errors) {
         if (errors.hasErrors()) {
             return "roles/form";

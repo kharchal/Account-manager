@@ -22,7 +22,7 @@
             <tr>
                 <td><label for="id">ID:</label></td>
                 <td><form:input class="form-control" path="id" id="id" readonly="true"/></td>
-                <td><form:errors cssStyle="color: red;" path="id"/></td>
+                <td></td>
             </tr>
             <tr>
                 <td><label for="value">NAME:</label></td>

@@ -12,7 +12,7 @@
 <body>
     <div class="container">
     <h3>Man list</h3>
-    <a href="./0">new item</a>
+    <a href="/app/men/0">new item</a>
     <table class="table table-hover">
         <tr>
             <th width="10%">id</th>
@@ -24,7 +24,7 @@
             <tr>
                 <td>${man.id}</td>
                 <td>
-                    <a href="./${man.id}">
+                    <a href="/app/men/${man.id}">
                             ${man.name}
                     </a>
                 </td>
@@ -36,7 +36,7 @@
                         <c:out value="${item.role}"/>
                     </c:forEach>
                 </td>
-                <td><a href="./${man.id}/delete" style="color: red;">delete</a></td>
+                <td><a href="/app/men/${man.id}/delete" style="color: red;">delete</a></td>
             </tr>
         </c:forEach>
     </table>

@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <h2>form</h2>
-    <form:form modelAttribute="man" action="./" method="post">
+    <form:form modelAttribute="man" action="/app/men/" method="post">
         <table class="table">
             <colgroup>
                 <col width="100px"/>
@@ -54,9 +54,9 @@
             </tr>
         </table>
     </form:form>
-    <a href="./${man.id}/prev">&lt;= prev</a> |
-    <a href="../">list</a> |
-    <a href="./${man.id}/next">next =&gt;</a>
+    <a href="/app/men/${man.id}/prev">&lt;= prev</a> |
+    <a href="/app/men/">list</a> |
+    <a href="/app/men/${man.id}/next">next =&gt;</a>
     <hr>
     <h3>Pet list</h3>
     <table class="table">
@@ -73,13 +73,13 @@
                 <td>${cnt.count}</td>
                 <td>${pet.id}</td>
                 <td>
-                    <a href="../pets/${pet.id}">
+                    <a href="/app/pets/${pet.id}">
                             ${pet.name}
                     </a>
                 </td>
                 <td>${pet.age}</td>
                 <td>${pet.kind.value}</td>
-                <td><a href="./${man.id}/pets/${pet.id}/delete" style="color: red;">delete</a></td>
+                <td><a href="/app/men/${man.id}/pets/${pet.id}/delete" style="color: red;">delete</a></td>
             </tr>
         </c:forEach>
     </table>
@@ -99,13 +99,13 @@
                 <td>${cnt.count}</td>
                 <td>${pet.id}</td>
                 <td>
-                    <a href="../pets/${pet.id}">
+                    <a href="/app/pets/${pet.id}">
                             ${pet.name}
                     </a>
                 </td>
                 <td>${pet.age}</td>
                 <td>${pet.kind.value}</td>
-                <td><a href="./${man.id}/pets/${pet.id}/add" style="color: green;">add</a></td>
+                <td><a href="/app/men/${man.id}/pets/${pet.id}/add" style="color: green;">add</a></td>
             </tr>
         </c:forEach>
     </table>

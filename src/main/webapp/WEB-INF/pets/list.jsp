@@ -12,7 +12,7 @@
 <body>
     <div class="container">
     <h3>list</h3>
-    <a href="./0">new item</a>
+    <a href="/app/pets/0">new item</a>
     <table class="table table-hover">
         <tr>
             <th>id</th>
@@ -25,13 +25,13 @@
             <tr>
                 <td>${pet.id}</td>
                 <td>
-                    <a href="./${pet.id}">
+                    <a href="/app/pets/${pet.id}">
                             ${pet.name}
                     </a>
                 </td>
                 <td>${pet.age}</td>
                 <td>${pet.kind.value}</td>
-                <td><a href="./${pet.id}/delete" style="color: red;">delete</a></td>
+                <td><a href="/app/pets/${pet.id}/delete" style="color: red;">delete</a></td>
             </tr>
         </c:forEach>
     </table>

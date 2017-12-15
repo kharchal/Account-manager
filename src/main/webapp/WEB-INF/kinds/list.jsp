@@ -34,7 +34,7 @@
     </table>
 
     <c:if test="${not empty backUrl}">
-        <a href="../${backUrl}">back...</a>
+        <a href="/app/men/${backUrl}">back...</a>
     </c:if>
         <jsp:include page="../util/footer.jsp"/>
     </div>

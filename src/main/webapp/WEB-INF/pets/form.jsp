@@ -14,7 +14,7 @@
 <body>
 <div class="container">
     <h3>form</h3>
-    <form:form modelAttribute="pet" action="./" method="post">
+    <form:form modelAttribute="pet" action="/app/pets/" method="post">
         <table class="table">
             <colgroup>
                 <col width="100px"/>
@@ -37,7 +37,7 @@
             </tr>
             <tr>
                 <td><label for="kind">
-                    <a href="../kinds/?backUrl=pets/${pet.id}&kindsUpdate=true">
+                    <a href="/app/kinds/?backUrl=pets/${pet.id}&kindsUpdate=true">
                         KIND:
                     </a>
                 </label></td>
@@ -52,7 +52,7 @@
             </tr>
         </table>
     </form:form>
-    <a href="../">list</a>
+    <a href="/app/pets/">list</a>
     <jsp:include page="../util/footer.jsp"/>
     </div>
 </body>

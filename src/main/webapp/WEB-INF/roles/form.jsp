@@ -13,7 +13,7 @@
 <body>
     <div class="container">
     <h3>form</h3>
-    <form:form modelAttribute="role" action="./" method="post">
+    <form:form modelAttribute="role" action="/app/roles/save" method="get">
         <table class="table">
             <colgroup>
                 <col width="100px"/>
@@ -22,7 +22,7 @@
             <tr>
                 <td><label for="id">ID:</label></td>
                 <td><form:input class="form-control" path="id" id="id" readonly="true"/></td>
-                <td><form:errors cssStyle="color: red;" path="id"/></td>
+                <td></td>
             </tr>
             <tr>
                 <td><label for="role">NAME:</label></td>
@@ -37,7 +37,7 @@
             </tr>
         </table>
     </form:form>
-    <a href=".">list</a>
+    <a href="/app/roles/">list</a>
     <jsp:include page="../util/footer.jsp"/>
     </div>
 </body>

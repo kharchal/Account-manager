@@ -3,6 +3,7 @@ package ua.com.hav.boot.bootjsp.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -17,8 +18,7 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Size(min = 4, max = 10)
     private String role;
 
-//    @ManyToMany(mappedBy = "roleList")
-//    List<Man> manList;
 }
