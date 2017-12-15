@@ -22,4 +22,11 @@ public class IndexController {
 //    public String getDate() {
 //        return new SimpleDateFormat("dd-MM HH:mm:ss").format(new Date());
 //    }
+
+    /**
+     *
+     * an old version
+     *
+     *
+     */
 }
