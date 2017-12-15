@@ -18,10 +18,20 @@ public class IndexController {
 //        return "time";
 //    }
 //
+//    this is a branch "try1"
+//
 //    @ModelAttribute("time")
 //    public String getDate() {
 //        return new SimpleDateFormat("dd-MM HH:mm:ss").format(new Date());
 //    }
+
+
+    /**
+     *
+     * some new fetches added
+     *
+     *
+     */
 
     /**
      *
