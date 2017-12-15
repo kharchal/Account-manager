@@ -35,7 +35,7 @@
             </tr>
         </c:forEach>
     </table>
-
+        <jsp:include page="../util/footer.jsp"/>
     <%--kinds: ${kinds}--%>
     </div>
 </body>

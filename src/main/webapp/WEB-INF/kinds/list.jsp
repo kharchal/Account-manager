@@ -36,6 +36,7 @@
     <c:if test="${not empty backUrl}">
         <a href="../${backUrl}">back...</a>
     </c:if>
+        <jsp:include page="../util/footer.jsp"/>
     </div>
 </body>
 </html>

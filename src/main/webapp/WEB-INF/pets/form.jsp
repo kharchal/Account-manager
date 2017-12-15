@@ -53,6 +53,7 @@
         </table>
     </form:form>
     <a href="../">list</a>
+    <jsp:include page="../util/footer.jsp"/>
     </div>
 </body>
 </html>
