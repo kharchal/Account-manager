@@ -13,13 +13,13 @@ import java.util.Date;
 @Controller
 public class IndexController {
 
-    @RequestMapping("/test")
-    public String showTime() {
-        return "time";
-    }
-
-    @ModelAttribute("time")
-    public String getDate() {
-        return new SimpleDateFormat("dd-MM HH:mm:ss").format(new Date());
-    }
+//    @RequestMapping("/test")
+//    public String showTime() {
+//        return "time";
+//    }
+//
+//    @ModelAttribute("time")
+//    public String getDate() {
+//        return new SimpleDateFormat("dd-MM HH:mm:ss").format(new Date());
+//    }
 }
